@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_test"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="150.424">
+  <properties />
+  
+  
+            <testcase name="test1" time="50.336" classname="cn.baigolf.buss.TestBuss" />
+                <testcase name="test3" time="50.186" classname="cn.baigolf.buss.TestBuss" />
+                <testcase name="test2" time="49.902" classname="cn.baigolf.buss.TestBuss" />
+      
+</testsuite>

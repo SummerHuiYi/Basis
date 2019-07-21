@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_login"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="364.159">
+  <properties />
+  
+  
+            <testcase name="login" time="46.084" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="62.372" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="47.076" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="65.290" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="51.883" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="45.989" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="45.465" classname="cn.baigolf.buss.LoginBuss" />
+      
+</testsuite>
