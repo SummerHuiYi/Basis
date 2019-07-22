@@ -34,13 +34,13 @@ public class SearchBuss extends TestCaseBeforeAfterMethod{
 		if(map.get("密码")!=(null)) paw=map.get("密码");
 		if(map.get("搜索地区或高尔夫球场")!=(null)) courseSearch=map.get("搜索地区或高尔夫球场");
 		//判断用户是否登录成功
+		System.out.println(webUrl);
 		boolean b=login.login(webUrl, user, paw, expectedResult, DriverBase.ThreadDriver.get());
 		if(!b) {
 			ImagesFile.setImage(DriverBase.ThreadDriver.get(), SearchBuss.class.getName(), "高尔夫球场-搜索", "第"+caseID+"用例，登录失败");
 			logger.error("功能：高尔夫球场-搜索；信息：第"+caseID+"用例，登录失败");		
 			assertEquals(false, true);		
 		}else { 
-			System.out.println("判断登录成功");
 			logger.info("功能：高尔夫球场-搜索；信息：第"+caseID+"用例，登录成功");	
 			assertEquals(true, true);
 			

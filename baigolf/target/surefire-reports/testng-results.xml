@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="cn.baigolf.base.TestCaseBeforeAfterMethod" duration-ms="2" started-at="2019-07-22T02:44:44Z" finished-at="2019-07-22T02:44:44Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="2" started-at="2019-07-22T02:44:44Z" finished-at="2019-07-22T02:44:44Z">
+    </test> <!-- Command line test -->
+  </suite> <!-- cn.baigolf.base.TestCaseBeforeAfterMethod -->
+</testng-results>

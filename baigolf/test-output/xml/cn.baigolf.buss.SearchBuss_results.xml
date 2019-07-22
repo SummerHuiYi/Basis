@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="76.183">
+           time="90.873">
   <properties />
   
   
-            <testcase name="search" time="76.183" classname="cn.baigolf.buss.SearchBuss" />
+            <testcase name="search" time="90.873" classname="cn.baigolf.buss.SearchBuss" />
       
 </testsuite>

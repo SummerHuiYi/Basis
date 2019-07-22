@@ -23,7 +23,8 @@ public class WebDriverMethod {
 	 * 创建driver,加入到ThreadLocal中
 	 * @return
 	 */
-	public static WebDriver driverStart(){
+	public static WebDriver getWebDriver(){
+	
 		WebDriver driver = null;
 		try {
 			DesiredCapabilities capability = new DesiredCapabilities();
@@ -31,11 +32,11 @@ public class WebDriverMethod {
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("disable-infobars");
 			capability.setCapability(ChromeOptions.CAPABILITY, option);
-//			capability.setVersion("75.0.3770.142");
-						capability.setBrowserName("chrome");
+			capability.setVersion(BasicConfigurationDriver.getVersion());
+						capability.setBrowserName(BasicConfigurationDriver.getBrowser());
 						driver = ThreadDriver.get();
-						if (driver==null){
-								driver = new RemoteWebDriver(new URL("http://192.168.43.241:4444/wd/hub"), capability);
+						if (driver==null){						
+								driver = new RemoteWebDriver(new URL(BasicConfigurationDriver.getNodeUrl()), capability);
 								logger.info("创建driver");
 								ThreadDriver.set(driver);
 								logger.info("新建driver加入ThreadDriver");

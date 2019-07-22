@@ -14,11 +14,13 @@ public class TestCaseBeforeAfterMethod {
 	@BeforeMethod(alwaysRun=true)
 	public void testBeforeMethod() {
 		DriverBase.getWebDriver();
+//		WebDriverMethod.getWebDriver();
 	}
 
 	/* 所有测试方法执行完后执行，下面所有层级都关闭一次 */
 	@AfterMethod(alwaysRun=true)
 	public void AfterMethod() {
 		DriverBase.driverQuit();
+//		WebDriverMethod.driverQuit();
 	}
 }

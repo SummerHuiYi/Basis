@@ -39,7 +39,6 @@ public class DriverBase {
 		}catch (Exception e) {
 			logger.error("创建驱动失败");
 		}
-		logger.info("新建driver开始加入ThreadDriver");
 		ThreadDriver.set(driver);
 		logger.info("新建driver加入ThreadDriver成功");
 		driver.manage().window().maximize();
@@ -48,13 +47,9 @@ public class DriverBase {
 	}
 	
 	public static void driverQuit(){
-		try {
-			ThreadDriver.get().quit();
-			ThreadDriver.remove();
-			logger.info("关闭driver服务与浏览器，把ThreadDriver里的对象引用移除");
-		}catch (Exception e) {
-			logger.error("关闭driver或ThreadDriver对象引用移除出现异常");
-		}
+		ThreadDriver.get().quit();
+		ThreadDriver.remove();
+		logger.info("关闭driver服务与浏览器，把ThreadDriver里的对象引用移除");
 		
 	}
 	
