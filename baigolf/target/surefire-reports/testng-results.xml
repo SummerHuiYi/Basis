@@ -1,11 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="cn.baigolf.base.TestCaseBeforeAfterMethod" duration-ms="2" started-at="2019-07-22T02:44:44Z" finished-at="2019-07-22T02:44:44Z">
+  <suite name="suite_baigolf" duration-ms="508398" started-at="2019-07-22T03:06:01Z" finished-at="2019-07-22T03:14:29Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="2" started-at="2019-07-22T02:44:44Z" finished-at="2019-07-22T02:44:44Z">
-    </test> <!-- Command line test -->
-  </suite> <!-- cn.baigolf.base.TestCaseBeforeAfterMethod -->
+    <test name="test_Search" duration-ms="169874" started-at="2019-07-22T03:06:01Z" finished-at="2019-07-22T03:08:51Z">
+      <class name="cn.baigolf.buss.SearchBuss">
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.SearchBuss@1623b78d]" name="testBeforeMethod" is-config="true" duration-ms="5345" started-at="2019-07-22T11:06:01Z" finished-at="2019-07-22T11:06:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeMethod -->
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.SearchBuss@1623b78d]" name="search" duration-ms="163155" started-at="2019-07-22T11:06:07Z" data-provider="search_data" finished-at="2019-07-22T11:08:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.baigolf.com:9443/baigolf_web/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户名:18316871034,密码:asdfgh,搜索地区或高尔夫球场:广州,场地:广州百高富豪球场,具体时段:10,打球人数:3,打球人姓名:张三、李四、王五,联系人:李四,手机号码:15912345678,账号余额:账号余额,支付宝:支付宝]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.SearchBuss@1623b78d]" name="AfterMethod" is-config="true" duration-ms="617" started-at="2019-07-22T11:08:50Z" finished-at="2019-07-22T11:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- cn.baigolf.buss.SearchBuss -->
+    </test> <!-- test_Search -->
+    <test name="test_login" duration-ms="508398" started-at="2019-07-22T03:06:01Z" finished-at="2019-07-22T03:14:29Z">
+      <class name="cn.baigolf.buss.LoginBuss">
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="5177" started-at="2019-07-22T11:06:01Z" finished-at="2019-07-22T11:06:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="114249" started-at="2019-07-22T11:06:07Z" data-provider="longin_data" finished-at="2019-07-22T11:08:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.baigolf.com:9443/baigolf_web/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户名:18316871034,密码:asdfgh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="617" started-at="2019-07-22T11:08:01Z" finished-at="2019-07-22T11:08:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3756" started-at="2019-07-22T11:08:02Z" finished-at="2019-07-22T11:08:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="78946" started-at="2019-07-22T11:08:05Z" data-provider="longin_data" finished-at="2019-07-22T11:09:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.baigolf.com:9443/baigolf_web/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户名:,密码:123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[请输入用户名]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="598" started-at="2019-07-22T11:09:24Z" finished-at="2019-07-22T11:09:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3819" started-at="2019-07-22T11:09:25Z" finished-at="2019-07-22T11:09:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="58018" started-at="2019-07-22T11:09:29Z" data-provider="longin_data" finished-at="2019-07-22T11:10:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.baigolf.com:9443/baigolf_web/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户名:54909805@qq.com,密码:]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[请输入密码]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="604" started-at="2019-07-22T11:10:27Z" finished-at="2019-07-22T11:10:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3749" started-at="2019-07-22T11:10:27Z" finished-at="2019-07-22T11:10:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="54921" started-at="2019-07-22T11:10:31Z" data-provider="longin_data" finished-at="2019-07-22T11:11:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.baigolf.com:9443/baigolf_web/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户名:,密码:]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[请输入用户名和密码]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="598" started-at="2019-07-22T11:11:26Z" finished-at="2019-07-22T11:11:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3816" started-at="2019-07-22T11:11:27Z" finished-at="2019-07-22T11:11:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="55630" started-at="2019-07-22T11:11:30Z" data-provider="longin_data" finished-at="2019-07-22T11:12:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.baigolf.com:9443/baigolf_web/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户名:549098,密码:54909805]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[您输入的账号或密码有误]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="601" started-at="2019-07-22T11:12:26Z" finished-at="2019-07-22T11:12:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3714" started-at="2019-07-22T11:12:27Z" finished-at="2019-07-22T11:12:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="57550" started-at="2019-07-22T11:12:30Z" data-provider="longin_data" finished-at="2019-07-22T11:13:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.baigolf.com:9443/baigolf_web/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户名:54909805@qq.com,密码:54909"]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[您输入的账号或密码有误]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="606" started-at="2019-07-22T11:13:28Z" finished-at="2019-07-22T11:13:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3853" started-at="2019-07-22T11:13:28Z" finished-at="2019-07-22T11:13:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="56191" started-at="2019-07-22T11:13:32Z" data-provider="longin_data" finished-at="2019-07-22T11:14:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.baigolf.com:9443/baigolf_web/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户名:5,密码:54909']]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[请在手机号码前添加国家代码]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="608" started-at="2019-07-22T11:14:29Z" finished-at="2019-07-22T11:14:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- cn.baigolf.buss.LoginBuss -->
+    </test> <!-- test_login -->
+  </suite> <!-- suite_baigolf -->
 </testng-results>

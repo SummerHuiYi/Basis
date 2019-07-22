@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM  "http://testng.org/testng-1.0.dtd">
+<suite name="suite_baigolf" thread-count="3" parallel="tests">
+	<test name="test_login">
+		<classes>
+			<class name="cn.baigolf.buss.LoginBuss"></class>
+		</classes>
+	</test> 
+	<test name="test_Search">
+		<classes>
+			<class name="cn.baigolf.buss.SearchBuss"></class>
+		</classes>
+	</test> 
+	
+	
+	<listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>
+</suite>

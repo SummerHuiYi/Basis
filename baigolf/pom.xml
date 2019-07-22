@@ -64,5 +64,82 @@
    			<version>3.17</version>
 		</dependency>
  	 </dependencies>
- 	
+ 	 
+ 	 
+ 	<build>
+ 		<plugins>
+ 			<plugin>
+ 				<groupId>org.apache.maven.plugins</groupId>
+ 				<artifactId>maven-surefire-plugin</artifactId>
+ 				<version>2.7.1</version>
+ 				<configuration>
+ 					<suiteXmlFiles>
+ 						<suiteXmlFile>src/test/resources/baigolf.xml</suiteXmlFile>
+ 					</suiteXmlFiles>
+ 					 <!-- 加入编码设置，否则生成的报告会中文乱码 -->
+ 					<argLine>-Dfile.encoding=UTF-8</argLine>
+ 				</configuration>
+ 			</plugin>
+ 			<!-- 配置web.xml文件的配置 -->
+	   <!--   <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-war-plugin</artifactId>
+	            <version>2.2</version>
+	            <configuration>
+	                指定web.xml的路径 
+					<webXml>WebRoot\WEB-INF\web.xml</webXml>
+					指定jsp、js、css的路劲 
+					<warSourceDirectory>WebRoot</warSourceDirectory>
+	            </configuration>
+	        </plugin> -->
+	        <!-- 因为测试代码时遇到错误，它会停止编译    -->
+	         <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-surefire-plugin</artifactId>
+	            <configuration>
+	                <testFailureIgnore>true</testFailureIgnore>            
+	            </configuration>
+	        </plugin>
+	         <!-- 添加插件,添加ReportNg的监听器，修改最后的TestNg的报告 -->
+          <!--   <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <properties>
+                        <property>
+                            <name>usedefaultlisteners</name>
+                            <value>false</value>
+                        </property>
+                        <property>
+                            <name>listener</name>
+                            <value>org.uncommons.reportng.HTMLReporter</value>
+                        </property>
+                    </properties>
+                    <workingDirectory>target/</workingDirectory>
+                    <forkMode>always</forkMode>
+                </configuration>
+            </plugin> -->
+            
+ 		</plugins>
+ 		
+ 		<resources>
+ 			<resource>
+ 				<directory>src/test/java</directory>
+ 				<includes>
+ 					<include>**/*.xml</include>
+ 				</includes>
+ 			</resource>
+ 			<resource>
+ 				<directory>src/test/resources</directory>
+ 			</resource>
+ 		</resources>
+ 	</build>
+ 	<properties>
+		<!-- 文件拷贝时的编码 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<!-- 编译时的编码 -->
+		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+	</properties>
 </project>
