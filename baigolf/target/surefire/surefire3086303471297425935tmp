@@ -1,0 +1,5 @@
+#surefire
+#Thu Jul 25 14:58:38 CST 2019
+user.dir=D\:\\selenium_test\\baigolf
+localRepository=D\:\\apache-maven-3.6.0\\maven-repository
+basedir=D\:\\selenium_test\\baigolf

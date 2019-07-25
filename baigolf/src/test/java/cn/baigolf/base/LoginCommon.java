@@ -16,11 +16,11 @@ import cn.baigolf.page.LoginPage;
  */
 public class LoginCommon {
 	private static Logger logger = LogManager.getLogger(LoginCommon.class);
-	public static boolean login(String url,String user,String paw,String expectedResult,WebDriver driver) {
+	public static boolean login(String url,String user,String paw,String expectedResult) {
 		logger.info("访问连接开始");
-		driver.get(url);
+		WebDriverMethod.getWebDriver().get(url);
 		logger.info("访问连接结束");
-		LoginPageHandle loginPageHandle=new LoginPageHandle(driver);
+		LoginPageHandle loginPageHandle=new LoginPageHandle();
 		logger.info("初始化化登录数据结束");
 		loginPageHandle.zhanghao();		
 		loginPageHandle.denglu();

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="suite_baigolf" duration-ms="508398" started-at="2019-07-22T03:06:01Z" finished-at="2019-07-22T03:14:29Z">
+  <suite name="suite_baigolf" duration-ms="403248" started-at="2019-07-25T06:58:39Z" finished-at="2019-07-25T07:05:23Z">
     <groups>
     </groups>
-    <test name="test_Search" duration-ms="169874" started-at="2019-07-22T03:06:01Z" finished-at="2019-07-22T03:08:51Z">
+    <test name="test_Search" duration-ms="98299" started-at="2019-07-25T06:58:39Z" finished-at="2019-07-25T07:00:18Z">
       <class name="cn.baigolf.buss.SearchBuss">
-        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.SearchBuss@1623b78d]" name="testBeforeMethod" is-config="true" duration-ms="5345" started-at="2019-07-22T11:06:01Z" finished-at="2019-07-22T11:06:07Z">
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.SearchBuss@57a3af25]" name="testBeforeMethod" is-config="true" duration-ms="5174" started-at="2019-07-25T14:58:40Z" finished-at="2019-07-25T14:58:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeMethod -->
-        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.SearchBuss@1623b78d]" name="search" duration-ms="163155" started-at="2019-07-22T11:06:07Z" data-provider="search_data" finished-at="2019-07-22T11:08:50Z">
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.SearchBuss@57a3af25]" name="search" duration-ms="43409" started-at="2019-07-25T14:58:45Z" data-provider="search_data" finished-at="2019-07-25T14:59:29Z">
           <params>
             <param index="0">
               <value>
@@ -37,19 +37,53 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.SearchBuss@1623b78d]" name="AfterMethod" is-config="true" duration-ms="617" started-at="2019-07-22T11:08:50Z" finished-at="2019-07-22T11:08:51Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.SearchBuss@57a3af25]" name="AfterMethod" is-config="true" duration-ms="30" started-at="2019-07-25T14:59:29Z" finished-at="2019-07-25T14:59:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.SearchBuss@57a3af25]" name="testBeforeMethod" is-config="true" duration-ms="3830" started-at="2019-07-25T14:59:29Z" finished-at="2019-07-25T14:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBeforeMethod -->
+        <test-method status="PASS" signature="search(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.SearchBuss@57a3af25]" name="search" duration-ms="45002" started-at="2019-07-25T14:59:33Z" data-provider="search_data" finished-at="2019-07-25T15:00:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://dev.baigolf.com:9443/baigolf_web/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[用户名:18316871034,密码:asdfgh,搜索地区或高尔夫球场:广州,场地:广州百高富豪球场,具体时段:10,打球人数:3,打球人姓名:张三、李四、王五,联系人:李四,手机号码:15912345678,账号余额:账号余额,支付宝:支付宝]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.SearchBuss@57a3af25]" name="AfterMethod" is-config="true" duration-ms="32" started-at="2019-07-25T15:00:18Z" finished-at="2019-07-25T15:00:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
       </class> <!-- cn.baigolf.buss.SearchBuss -->
     </test> <!-- test_Search -->
-    <test name="test_login" duration-ms="508398" started-at="2019-07-22T03:06:01Z" finished-at="2019-07-22T03:14:29Z">
+    <test name="test_login" duration-ms="403248" started-at="2019-07-25T06:58:39Z" finished-at="2019-07-25T07:05:23Z">
       <class name="cn.baigolf.buss.LoginBuss">
-        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="5177" started-at="2019-07-22T11:06:01Z" finished-at="2019-07-22T11:06:07Z">
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="testBeforeMethod" is-config="true" duration-ms="5496" started-at="2019-07-25T14:58:40Z" finished-at="2019-07-25T14:58:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="114249" started-at="2019-07-22T11:06:07Z" data-provider="longin_data" finished-at="2019-07-22T11:08:01Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="login" duration-ms="49765" started-at="2019-07-25T14:58:46Z" data-provider="longin_data" finished-at="2019-07-25T14:59:35Z">
           <params>
             <param index="0">
               <value>
@@ -75,15 +109,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="617" started-at="2019-07-22T11:08:01Z" finished-at="2019-07-22T11:08:02Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="AfterMethod" is-config="true" duration-ms="22" started-at="2019-07-25T14:59:35Z" finished-at="2019-07-25T14:59:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3756" started-at="2019-07-22T11:08:02Z" finished-at="2019-07-22T11:08:05Z">
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="testBeforeMethod" is-config="true" duration-ms="3899" started-at="2019-07-25T14:59:36Z" finished-at="2019-07-25T14:59:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="78946" started-at="2019-07-22T11:08:05Z" data-provider="longin_data" finished-at="2019-07-22T11:09:24Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="login" duration-ms="53980" started-at="2019-07-25T14:59:39Z" data-provider="longin_data" finished-at="2019-07-25T15:00:33Z">
           <params>
             <param index="0">
               <value>
@@ -109,15 +143,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="598" started-at="2019-07-22T11:09:24Z" finished-at="2019-07-22T11:09:25Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="AfterMethod" is-config="true" duration-ms="31" started-at="2019-07-25T15:00:33Z" finished-at="2019-07-25T15:00:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3819" started-at="2019-07-22T11:09:25Z" finished-at="2019-07-22T11:09:29Z">
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="testBeforeMethod" is-config="true" duration-ms="3969" started-at="2019-07-25T15:00:33Z" finished-at="2019-07-25T15:00:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="58018" started-at="2019-07-22T11:09:29Z" data-provider="longin_data" finished-at="2019-07-22T11:10:27Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="login" duration-ms="47261" started-at="2019-07-25T15:00:37Z" data-provider="longin_data" finished-at="2019-07-25T15:01:25Z">
           <params>
             <param index="0">
               <value>
@@ -143,15 +177,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="604" started-at="2019-07-22T11:10:27Z" finished-at="2019-07-22T11:10:27Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="AfterMethod" is-config="true" duration-ms="31" started-at="2019-07-25T15:01:25Z" finished-at="2019-07-25T15:01:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3749" started-at="2019-07-22T11:10:27Z" finished-at="2019-07-22T11:10:31Z">
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="testBeforeMethod" is-config="true" duration-ms="3830" started-at="2019-07-25T15:01:25Z" finished-at="2019-07-25T15:01:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="54921" started-at="2019-07-22T11:10:31Z" data-provider="longin_data" finished-at="2019-07-22T11:11:26Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="login" duration-ms="49569" started-at="2019-07-25T15:01:29Z" data-provider="longin_data" finished-at="2019-07-25T15:02:18Z">
           <params>
             <param index="0">
               <value>
@@ -177,15 +211,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="598" started-at="2019-07-22T11:11:26Z" finished-at="2019-07-22T11:11:27Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="AfterMethod" is-config="true" duration-ms="27" started-at="2019-07-25T15:02:18Z" finished-at="2019-07-25T15:02:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3816" started-at="2019-07-22T11:11:27Z" finished-at="2019-07-22T11:11:30Z">
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="testBeforeMethod" is-config="true" duration-ms="3798" started-at="2019-07-25T15:02:18Z" finished-at="2019-07-25T15:02:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="55630" started-at="2019-07-22T11:11:30Z" data-provider="longin_data" finished-at="2019-07-22T11:12:26Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="login" duration-ms="48527" started-at="2019-07-25T15:02:22Z" data-provider="longin_data" finished-at="2019-07-25T15:03:10Z">
           <params>
             <param index="0">
               <value>
@@ -211,15 +245,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="601" started-at="2019-07-22T11:12:26Z" finished-at="2019-07-22T11:12:27Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="AfterMethod" is-config="true" duration-ms="21" started-at="2019-07-25T15:03:10Z" finished-at="2019-07-25T15:03:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3714" started-at="2019-07-22T11:12:27Z" finished-at="2019-07-22T11:12:30Z">
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="testBeforeMethod" is-config="true" duration-ms="3871" started-at="2019-07-25T15:03:10Z" finished-at="2019-07-25T15:03:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="57550" started-at="2019-07-22T11:12:30Z" data-provider="longin_data" finished-at="2019-07-22T11:13:28Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="login" duration-ms="64840" started-at="2019-07-25T15:03:14Z" data-provider="longin_data" finished-at="2019-07-25T15:04:19Z">
           <params>
             <param index="0">
               <value>
@@ -245,15 +279,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="606" started-at="2019-07-22T11:13:28Z" finished-at="2019-07-22T11:13:28Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="AfterMethod" is-config="true" duration-ms="32" started-at="2019-07-25T15:04:19Z" finished-at="2019-07-25T15:04:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="testBeforeMethod" is-config="true" duration-ms="3853" started-at="2019-07-22T11:13:28Z" finished-at="2019-07-22T11:13:32Z">
+        <test-method status="PASS" signature="testBeforeMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="testBeforeMethod" is-config="true" duration-ms="3800" started-at="2019-07-25T15:04:19Z" finished-at="2019-07-25T15:04:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBeforeMethod -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="login" duration-ms="56191" started-at="2019-07-22T11:13:32Z" data-provider="longin_data" finished-at="2019-07-22T11:14:29Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="login" duration-ms="59558" started-at="2019-07-25T15:04:23Z" data-provider="longin_data" finished-at="2019-07-25T15:05:23Z">
           <params>
             <param index="0">
               <value>
@@ -279,7 +313,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@478190fc]" name="AfterMethod" is-config="true" duration-ms="608" started-at="2019-07-22T11:14:29Z" finished-at="2019-07-22T11:14:29Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:cn.baigolf.buss.LoginBuss@72d1ad2e]" name="AfterMethod" is-config="true" duration-ms="31" started-at="2019-07-25T15:05:23Z" finished-at="2019-07-25T15:05:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->

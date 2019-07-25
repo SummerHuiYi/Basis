@@ -13,9 +13,8 @@ import cn.baigolf.page.LoginPage;
 public class LoginPageHandle extends BaseHandle{
 	public LoginPage loginPage;
 	
-	public LoginPageHandle(WebDriver driver) {
-		super(driver);
-		this.loginPage=new LoginPage(driver);
+	public LoginPageHandle() {
+		this.loginPage=new LoginPage();
 	}	
 	//模拟鼠标移动到账号元素上
 	public void zhanghao() {

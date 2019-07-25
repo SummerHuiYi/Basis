@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+
+import cn.baigolf.base.WebDriverMethod;
 public class SearchPage{
 	
 	@FindBy(id="course_search")
@@ -25,8 +27,8 @@ public class SearchPage{
 	 * PageFactory.initElements(driver,page)方法来初始化实例化WebElement。
 	 * 调用initElements()有两种方法，建议加上隐式等待的的方式。
 	 */
-	public SearchPage(WebDriver driver) {
-		PageFactory.initElements(new AjaxElementLocatorFactory(driver, 10), this);
+	public SearchPage() {
+		PageFactory.initElements(new AjaxElementLocatorFactory(WebDriverMethod.getWebDriver(), 10), this);
 	}
 	
 	public WebElement getCourse_search() {

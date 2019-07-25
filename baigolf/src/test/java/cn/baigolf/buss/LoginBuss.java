@@ -19,6 +19,7 @@ import cn.baigolf.base.DriverBase;
 import cn.baigolf.base.ImagesFile;
 
 import cn.baigolf.base.TestCaseBeforeAfterMethod;
+import cn.baigolf.base.WebDriverMethod;
 import cn.baigolf.handle.LoginPageHandle;
 import cn.baigolf.page.LoginPage;
 import cn.baigolf.util.ExcelUtil;
@@ -33,8 +34,8 @@ public class LoginBuss extends TestCaseBeforeAfterMethod{
 		String paw="";
 		if(map.get("用户名")!=null) user=map.get("用户名");
 		if(map.get("密码")!=(null)) paw=map.get("密码");
-		DriverBase.ThreadDriver.get().get(webUrl);
-		LoginPageHandle loginPageHandle=new LoginPageHandle(DriverBase.ThreadDriver.get());
+		WebDriverMethod.ThreadDriver.get().get(webUrl);
+		LoginPageHandle loginPageHandle=new LoginPageHandle();
 		loginPageHandle.zhanghao();
 		loginPageHandle.denglu();
 		loginPageHandle.user(user);
@@ -50,7 +51,7 @@ public class LoginBuss extends TestCaseBeforeAfterMethod{
 				assertEquals(true, true);
 			}
 			else {
-				ImagesFile.setImage(DriverBase.ThreadDriver.get(), LoginBuss.class.getName(), "百高-登录", "第"+caseID+"用例，验证登录失败-失败");
+				ImagesFile.setImage(LoginBuss.class.getName(), "百高-登录", "第"+caseID+"用例，验证登录失败-失败");
 				logger.error("功能：百高-登录；信息：第"+caseID+"用例，验证登录失败-失败");
 				assertEquals(false, true);
 			}

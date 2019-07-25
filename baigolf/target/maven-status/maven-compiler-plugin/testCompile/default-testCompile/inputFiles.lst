@@ -2,11 +2,13 @@ D:\selenium_test\baigolf\src\test\java\cn\baigolf\handle\SearchPageHandle.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\base\AssertMethod.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\page\SearchPage.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\base\JSExecutorMethod.java
+D:\selenium_test\baigolf\src\test\java\cn\baigolf\buss\DriverBaseBussTest.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\buss\LoginBuss.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\util\ExcelUtil.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\base\BasicConfigurationDriver.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\base\ImagesFile.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\base\LoginCommon.java
+D:\selenium_test\baigolf\src\test\java\cn\baigolf\buss\TestBuss.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\base\BaseHandle.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\base\BrowserMethod.java
 D:\selenium_test\baigolf\src\test\java\cn\baigolf\base\WaitMethod.java

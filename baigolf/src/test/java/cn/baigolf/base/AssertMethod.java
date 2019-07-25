@@ -61,7 +61,7 @@ public class AssertMethod extends Assert{
 	public static void page_Text_Present(String exp_text){
 		logger.info("检查页面内容包含预期内容");
 		// 遍历body节点下的所有节点取其文本值并判断是否包含文本
-		assertEquals(new BaseHandle().findElementGetText(DriverBase.getWebDriver().findElement(By.tagName("body"))).contains(exp_text),true,"页面中没有匹配的文字");
+		assertEquals(new BaseHandle().findElementGetText(WebDriverMethod.getWebDriver().findElement(By.tagName("body"))).contains(exp_text),true,"页面中没有匹配的文字");
 
 	}
 	
@@ -71,7 +71,7 @@ public class AssertMethod extends Assert{
 	 */
 	public static void page_Text_Not_Present(String exp_text){
 		logger.info("检查页面内容不包含预期内容");
-		assertEquals(new BaseHandle().findElementGetText(DriverBase.getWebDriver().findElement(By.tagName("body"))).contains(exp_text),false,"页面中有匹配的文字");
+		assertEquals(new BaseHandle().findElementGetText(WebDriverMethod.getWebDriver().findElement(By.tagName("body"))).contains(exp_text),false,"页面中有匹配的文字");
 	}
 	
 	/**

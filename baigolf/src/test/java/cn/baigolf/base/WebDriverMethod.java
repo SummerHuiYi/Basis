@@ -6,6 +6,7 @@ import java.net.URL;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -47,6 +48,10 @@ public class WebDriverMethod {
 						// TODO: handle exception
 						e.printStackTrace();
 						logger.error("url报错："+e.getMessage());
+					}catch (WebDriverException e) {
+						// TODO: handle exception
+						e.printStackTrace();
+						logger.error("创建driver报错："+e.getMessage());
 					}catch(Exception e){
 						e.printStackTrace();
 						logger.error("创建driver报错："+e.getMessage());

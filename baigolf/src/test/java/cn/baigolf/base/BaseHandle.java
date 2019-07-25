@@ -21,9 +21,8 @@ import org.openqa.selenium.support.ui.Select;
 public class BaseHandle {
 	private WebDriver driver;
 	private static Logger logger = LogManager.getLogger(BaseHandle.class);
-	public BaseHandle() {}
-	public BaseHandle(WebDriver driver) {
-		this.driver=driver;
+	public BaseHandle() {
+		this.driver=WebDriverMethod.getWebDriver();
 	}
 	/**
 	 * 找到元素并点击操作

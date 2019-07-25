@@ -7,9 +7,8 @@ import cn.baigolf.page.SearchPage;
 
 public class SearchPageHandle extends BaseHandle{
 	public SearchPage searchPage;
-	public SearchPageHandle(WebDriver driver) {
-		super(driver);
-		searchPage=new SearchPage(driver);
+	public SearchPageHandle() {
+		searchPage=new SearchPage();
 	}
 	
 	public void course_search(String value) {

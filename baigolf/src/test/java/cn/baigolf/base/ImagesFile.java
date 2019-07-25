@@ -19,11 +19,11 @@ import org.openqa.selenium.WebDriver;
 public class ImagesFile {
 	private static File srcFile;
 	private static Logger logger = LogManager.getLogger(ImagesFile.class);
-	public static void setImage(WebDriver driver,String className,String functionName,String message) {
+	public static void setImage(String className,String functionName,String message) {
 		try {
 			Date dNow = new Date( );
 		    SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd hh-mm-ss-SSS");
-			srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			srcFile=((TakesScreenshot)WebDriverMethod.getWebDriver()).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(srcFile,new File("d:\\imgs\\"+className+"_"+functionName+"_"+message+"_"+ft.format(dNow)+".png"));
 			logger.info("截图成功");
 		} catch (IOException e) {

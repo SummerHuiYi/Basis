@@ -17,7 +17,7 @@ public class JSExecutorMethod{
 	 */
 	public static boolean pageDOMLoadComplete(){
 		boolean complete = false;
-		JavascriptExecutor JS=(JavascriptExecutor) DriverBase.ThreadDriver.get();
+		JavascriptExecutor JS=(JavascriptExecutor) WebDriverMethod.ThreadDriver.get();
 		try {
 			while(!"complete".equals(JS.executeScript("return document.readyState"))){
 				Thread.sleep(1000);
@@ -37,7 +37,7 @@ public class JSExecutorMethod{
 	 */
 	public static boolean pageBOMLoadComplete(){
 		boolean complete = false;
-		JavascriptExecutor JS=(JavascriptExecutor) DriverBase.ThreadDriver.get();
+		JavascriptExecutor JS=(JavascriptExecutor) WebDriverMethod.ThreadDriver.get();
 		try {
 			while(!"页面加载完成".equals(JS.executeScript("window.onload=function(){return '页面加载完成';};return window.onload();"))){
 				Thread.sleep(1000);

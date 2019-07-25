@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="test_Search"
-           tests="1"
+           tests="2"
            failures="0"
            errors="0"
            skipped="0"
-           time="163.155">
+           time="88.411">
   <properties />
   
   
-            <testcase name="search" time="163.155" classname="cn.baigolf.buss.SearchBuss" />
+            <testcase name="search" time="45.002" classname="cn.baigolf.buss.SearchBuss" />
+                <testcase name="search" time="43.409" classname="cn.baigolf.buss.SearchBuss" />
       
 </testsuite>

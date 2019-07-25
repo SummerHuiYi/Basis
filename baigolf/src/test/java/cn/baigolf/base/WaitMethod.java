@@ -25,7 +25,7 @@ public class WaitMethod {
 		 */
 		try {
 			if(JSExecutorMethod.pageDOMLoadComplete()) {	
-				WebDriverWait wait=new WebDriverWait(DriverBase.ThreadDriver.get(), 10);
+				WebDriverWait wait=new WebDriverWait(WebDriverMethod.ThreadDriver.get(), 10);
 				wait.until(ExpectedConditions.visibilityOf(elemnet));
 				logger.info("元素位置"+elemnet+"可见");
 				waitResult=true;
