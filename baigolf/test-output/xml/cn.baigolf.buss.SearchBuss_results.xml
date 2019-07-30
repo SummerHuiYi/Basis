@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="71.918">
+           time="68.088">
   <properties />
   
   
-            <testcase name="search" time="28.740" classname="cn.baigolf.buss.SearchBuss" />
-                <testcase name="search" time="43.178" classname="cn.baigolf.buss.SearchBuss" />
+            <testcase name="search" time="36.764" classname="cn.baigolf.buss.SearchBuss" />
+                <testcase name="search" time="31.324" classname="cn.baigolf.buss.SearchBuss" />
       
 </testsuite>

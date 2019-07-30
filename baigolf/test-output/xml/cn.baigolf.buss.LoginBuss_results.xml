@@ -4,16 +4,16 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="296.088">
+           time="288.677">
   <properties />
   
   
-            <testcase name="login" time="21.882" classname="cn.baigolf.buss.LoginBuss" />
-                <testcase name="login" time="46.578" classname="cn.baigolf.buss.LoginBuss" />
-                <testcase name="login" time="44.486" classname="cn.baigolf.buss.LoginBuss" />
-                <testcase name="login" time="45.768" classname="cn.baigolf.buss.LoginBuss" />
-                <testcase name="login" time="44.129" classname="cn.baigolf.buss.LoginBuss" />
-                <testcase name="login" time="47.822" classname="cn.baigolf.buss.LoginBuss" />
-                <testcase name="login" time="45.423" classname="cn.baigolf.buss.LoginBuss" />
+            <testcase name="login" time="44.261" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="44.338" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="44.621" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="45.026" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="45.439" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="20.578" classname="cn.baigolf.buss.LoginBuss" />
+                <testcase name="login" time="44.414" classname="cn.baigolf.buss.LoginBuss" />
       
 </testsuite>
